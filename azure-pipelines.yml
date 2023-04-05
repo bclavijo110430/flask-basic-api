@@ -13,5 +13,6 @@ steps:
 - task: Docker@2
   inputs:
     command: 'build'
+    repository: 'api-flask-basic'
     Dockerfile: './Dockerfile'
-    tags: apibasicflask:$(Build.BuildId)
+    tags: '$(DockerTags)'
