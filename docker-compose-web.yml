@@ -1,6 +1,6 @@
 version: '3'
 services:
   web:
-    image: api-flask-basic:production
+    image: bclavijo110430/flask-basic-api:$(Release.ReleaseName)
     ports:
       - "5100:5100"
