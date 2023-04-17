@@ -1,0 +1,6 @@
+version: '3'
+services:
+  web:
+    image: api-flask-basic:production
+    ports:
+      - "5100:5100"
