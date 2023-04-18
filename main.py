@@ -1,3 +1,4 @@
+import os
 import platform
 import subprocess
 import socket
@@ -23,7 +24,9 @@ def server_info():
         'machine': platform.machine(),
         'processor': platform.processor(),
  #       'java_version': java_version,
-        'ip_addres': ip_address 
+        'ip_addres': ip_address,
+         'environment_variable': os.environ.get('testingenv') # Reemplaza NOMBRE_DE_LA_VARIABLE con el nombre de la variable de entorno que deseas obtener
+      
     }
     return server_info
 
